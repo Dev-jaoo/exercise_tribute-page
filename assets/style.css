@@ -1,0 +1,59 @@
+
+/* .playfair-display-<uniquifier> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+
+/* .libre-baskerville-<uniquifier> {
+  font-family: "Libre Baskerville", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* COLORS */
+
+/* 
+Fundo escuro
+#1C1D21
+
+Fundo claro
+#F6EEE8
+
+Texto principal
+#1A1C28
+
+Roxo principal
+#AC93A7
+
+Roxo escuro
+#3F3040
+
+Fundo dos cards
+#E9DDE3
+*/
+
+
+:root {
+    /* Backgrounds */
+    --color-dark: #1C1D21;
+    --color-light: #F6EEE8;
+    --color-card: #E9DDE3;
+
+    /* Typography */
+    --color-text: #1A1C28;
+    --color-text-light: #F6EEE8;
+
+    /* Accents */
+    --color-purple: #AC93A7;
+    --color-purple-dark: #3F3040;
+
+    /* Fonts */
+    --font-heading: "Playfair Display", serif;
+    --font-body: "Libre Baskerville", serif;
+}
+
