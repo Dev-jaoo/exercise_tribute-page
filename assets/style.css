@@ -57,3 +57,124 @@ Fundo dos cards
     --font-body: "Libre Baskerville", serif;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.max-size{
+    max-width: 1920px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hero {
+    min-height: 700px;
+    background-image: url('./AlanTuring_bgWindow.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--color-dark);
+    /* DELIMITAR UMA LARGURA MAXIMA */
+}
+
+
+.container{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.background-nav{
+    background: linear-gradient(to right, var(--color-dark), transparent, var(--color-dark));
+}
+
+nav{
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 a{
+    color: var(--color-text-light);
+    text-decoration: none;
+    font-family: var(--font-heading);
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a{
+    color: var(--color-light);
+    text-decoration: none;
+    cursor: pointer;
+    font-family: var(--font-heading);
+}
+
+.hero-content{
+    color: var(--color-light);
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+    margin-top: 7rem;
+    font-family: var(--font-heading);
+}
+
+.hero-content span{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .7rem;
+}
+
+.hero-content-line{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    display: inline-block;
+    height: 2px;
+    width: 5rem;
+    background-color: var(--color-purple);
+    
+}
+
+.hero-content h1{
+    font-size: 6rem;
+}
+
+.hero-content-born{
+    font-size: 4rem;
+    margin-top: -1.5rem;
+}
+
+.hero-content-resume{
+    font-size: 1.6rem;
+    margin-top: 3rem;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    .hero{
+        background-image: url('./AlanTuring.png');
+    }
+}
+
