@@ -50,7 +50,7 @@ Fundo dos cards
 
     /* Accents */
     --color-purple: #AC93A7;
-    --color-purple-dark: #3F3040;
+    --color-purple-dark: #4e3950;
 
     /* Fonts */
     --font-heading: "Playfair Display", serif;
@@ -159,12 +159,92 @@ nav ul li a{
     font-style: italic;
 }
 
+main{
+    background-color: var(--color-light);
+    font-family: var(--font-body);
+}
+
+.about{
+    display: flex;
+    padding-top: 3rem;
+    gap: 5rem;
+}
+
+.about-alan{
+    flex: 3;
+}
+
+
+.about-alan h2,
+.timeline h2{
+    font-size: 2.4rem;
+}
+
+.about-alan p,
+.timeline-list{
+    font-size: 1.4rem;
+    margin-top: 2rem;
+}
 
 
 
 
 
 
+/* aside - timeline */
+
+.timeline{
+    flex: 2;
+    height: 600px;
+}
+
+.timeline-list {
+    list-style: none;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 3rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.timeline-date{
+    margin-right: 1rem;
+    font-weight: 800;
+    color: var(--color-purple-dark);
+    font-size: 1.7rem;
+}
+
+/* Linha vertical */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -1.5rem;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-purple);
+}
+
+/* Bolinha */
+.timeline-item::after {
+    content: "";
+    position: absolute;
+    left: calc(-1.5rem - 5px);
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--color-purple);
+}
+
+
+.more-info{
+    display: flex;
+}
 
 
 
